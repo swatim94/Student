@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> Subject </title>
+<link rel="stylesheet" type="text/css" href="styling.css"> 
+ <script type="text/javascript" src="valid3.js"></script> 
+ <script type="text/javascript" src="valid2.js"></script> 
+
+</head>
+<body onload="return showDept();">
+<div id= "div1">
+<h1> Add a new Subject</h1>
+<form name="form1" onsubmit="validate">
+<label>Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter subject name" required/><br/><br/>
+<label name="le1"></label>
+
+
+<label>Subject Code:</label>
+<input type="text" id="code" name="code" placeholder="Enter subject code" required/><br/><br/>
+
+<label> Department:</label>
+
+<select id="select1">
+	<option name="option" value=" " disabled="true" selected="true">  Select Dept</option>
+</select><br/><br/>
+
+
+<input type="submit" value="SUBMIT" onclick="return addSubj();" /><br/>
+
+</form></div>
+</body>
+</html>

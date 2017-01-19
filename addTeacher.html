@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> Teacher </title>
+<link rel="stylesheet" type="text/css" href="styling.css"> 
+ <script type="text/javascript" src="valid2.js"></script> 
+  <script type="text/javascript" src="valid4.js"></script> 
+
+
+
+</head>
+<body onload="return showDept();">
+<div id= "div1">
+<h1> Add a new teacher</h1>
+<form name="form1" onsubmit="validate">
+<label>Username:</label>
+<input type="text" id="uname" name="uname" placeholder="Enter Username" required/> <br/><br/>
+<label>Password:</label>
+<input type="text" id="pass" name="pass" placeholder="Enter Password" required/><br/><br/>
+
+<label> Department:</label>
+<select id="select1" onchange="return showSubj();">
+	<option name="option1" value=" " disabled="true" selected="true">  Select Dept</option>
+</select><br/><br/>
+
+<label> Subject:</label>
+<select id="select2" >	<option name="option" value=" " disabled="true" selected="true">  Select Subject</option>
+</select><br/><br/>
+
+<input type="submit" value="SUBMIT" onclick="return addTeacher();"/><br/>
+
+</form></div>
+</body>
+</html>
